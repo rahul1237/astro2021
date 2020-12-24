@@ -1,10 +1,32 @@
 const validator = require("validator")  //this is the package to check the string!
 const chalk = require("chalk")  //this is the package to use diff colors in the console!
-const yargs = require("yargs")
+const yargs = require("yargs");
+const { describe } = require("yargs");
 
 
 //                 yargs this is the package that is also used for taking input from
 //                      the users! ---> (yargs.argv)
+
+//                  CREATION OF COMMANDS!!
+
+yargs.command({         //creation of add command!
+    command:    "add",
+    describe:   "adds into the todo list!",
+    handler: function(){
+        console.log('adding into the list!')
+    }
+})
+
+yargs.command({
+    command:    "remove",
+    describe:   "remove from the todo list!",
+    handler:    function(){
+        console.log('removing from the list! :)');
+    }
+})
+
+
+
 
 console.log(yargs.argv);
 
