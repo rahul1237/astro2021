@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/rahul1237/astro2021/issues"
   },
-  "homepage": "https://github.com/rahul1237/astro2021#readme"
+  "homepage": "https://github.com/rahul1237/astro2021#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "validator": "^13.5.2",
+    "yargs": "^16.2.0"
+  }
 }
