@@ -9,6 +9,7 @@ const { describe } = require("yargs");
 
 //                  CREATION OF COMMANDS!!
 
+
 yargs.command({         //creation of add command!
     command:    "add",
     describe:   "adds into the todo list!",
@@ -25,9 +26,6 @@ yargs.command({
     }
 })
 
-
-
-
 console.log(yargs.argv);
 
 
@@ -37,6 +35,7 @@ console.log(yargs.argv);
 //                  process.argv -> this is used to take the input from the user!
 //                          argv is the vector that contains the user input on the
 //                          2 position wrt to its index position!
+
 
 // const user_input = process.argv[2]
 // if(user_input=='add'){
@@ -61,7 +60,6 @@ console.log(yargs.argv);
 
 // a="success"
 // console.log(chalk.red.bold.inverse.bgWhite(a)); //inverse:- used to change the for->back ground color & vice-versa!
-
 
 
 
